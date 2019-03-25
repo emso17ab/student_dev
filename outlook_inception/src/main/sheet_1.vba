@@ -1,4 +1,4 @@
-﻿Sub Worksheet_SelectionChange(ByVal Target As Excel.Range)
+Sub Worksheet_SelectionChange(ByVal Target As Excel.Range)
 'Update 20140318
 Static xRow
 Static xColumn
@@ -11,7 +11,7 @@ pRow = Selection.Row
 pColumn = Selection.Column
 xRow = pRow
 xColumn = pColumn
-With Range("B" & pRow & ":H" & pRow).Interior
+With Range("B" & pRow & ":J" & pRow).Interior
     .ColorIndex = 36
     .Pattern = xlSolid
 End With
